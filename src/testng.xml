@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="BookStoreTestSuite">
-	<test name="LoginTests">
+	<test name="UI Tests">
 		<classes>
-			<class name="com.demoqa.tests.LoginTests">
+			<class name="com.demoqa.uitests.LoginTests">
 				<methods>
 					<include name="validLoginTest" />
 					<include name="invalidLoginTest" />
 				</methods>
 			</class>
 
-			<classes>
-				<class name="com.demoqa.tests.BookStoreTests">
-					<methods>
-						<include name="searchBookTest" />
-					</methods>
-				</class>
-			</classes>
+			<class name="com.demoqa.uitests.BookStoreTests">
+				<methods>
+					<include name="searchBookTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="API Tests">
+		<classes>
+			<class name="com.demoqa.apitests.UserRegistrationApiTests" />
+			<class name="com.demoqa.apitests.BookStoreApiTests" />
+		</classes>
 	</test>
 </suite>

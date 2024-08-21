@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T00:23:46 NZST" name="Default suite" finished-at="2024-08-22T00:24:14 NZST" duration-ms="27854">
+  <suite started-at="2024-08-22T01:32:49 NZST" name="BookStoreTestSuite" finished-at="2024-08-22T01:34:11 NZST" duration-ms="81344">
     <groups>
     </groups>
-    <test started-at="2024-08-22T00:23:46 NZST" name="Default test" finished-at="2024-08-22T00:24:14 NZST" duration-ms="27854">
-      <class name="com.demoqa.tests.BookStoreTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:23:46 NZST" name="setUp" finished-at="2024-08-22T00:24:11 NZST" duration-ms="25130" status="PASS">
+    <test started-at="2024-08-22T01:32:49 NZST" name="UI Tests" finished-at="2024-08-22T01:34:04 NZST" duration-ms="75068">
+      <class name="com.demoqa.uitests.BookStoreTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.uitests.BookStoreTests@59e2d8e3]" started-at="2024-08-22T01:33:41 NZST" name="setUp" finished-at="2024-08-22T01:34:02 NZST" duration-ms="20613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchBookTest()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:24:11 NZST" name="searchBookTest" finished-at="2024-08-22T00:24:13 NZST" duration-ms="2478" status="PASS">
+        <test-method signature="searchBookTest()[pri:0, instance:com.demoqa.uitests.BookStoreTests@59e2d8e3]" started-at="2024-08-22T01:34:02 NZST" name="searchBookTest" finished-at="2024-08-22T01:34:04 NZST" duration-ms="2365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBookTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:24:13 NZST" name="tearDown" finished-at="2024-08-22T00:24:14 NZST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.uitests.BookStoreTests@59e2d8e3]" started-at="2024-08-22T01:34:04 NZST" name="tearDown" finished-at="2024-08-22T01:34:04 NZST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demoqa.tests.BookStoreTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.demoqa.uitests.BookStoreTests -->
+      <class name="com.demoqa.uitests.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.uitests.LoginTests@30b6ffe0]" started-at="2024-08-22T01:32:49 NZST" name="setUp" finished-at="2024-08-22T01:33:08 NZST" duration-ms="18667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.demoqa.uitests.LoginTests@30b6ffe0]" started-at="2024-08-22T01:33:08 NZST" name="validLoginTest" finished-at="2024-08-22T01:33:13 NZST" duration-ms="4440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.uitests.LoginTests@30b6ffe0]" started-at="2024-08-22T01:33:13 NZST" name="tearDown" finished-at="2024-08-22T01:33:13 NZST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.uitests.LoginTests@30b6ffe0]" started-at="2024-08-22T01:33:13 NZST" name="setUp" finished-at="2024-08-22T01:33:37 NZST" duration-ms="23951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginTest()[pri:0, instance:com.demoqa.uitests.LoginTests@30b6ffe0]" started-at="2024-08-22T01:33:37 NZST" name="invalidLoginTest" finished-at="2024-08-22T01:33:41 NZST" duration-ms="4353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.uitests.LoginTests@30b6ffe0]" started-at="2024-08-22T01:33:41 NZST" name="tearDown" finished-at="2024-08-22T01:33:41 NZST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.uitests.LoginTests -->
+    </test> <!-- UI Tests -->
+    <test started-at="2024-08-22T01:34:04 NZST" name="API Tests" finished-at="2024-08-22T01:34:11 NZST" duration-ms="6229">
+      <class name="com.demoqa.apitests.BookStoreApiTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoqa.apitests.BookStoreApiTests@7cb502c]" started-at="2024-08-22T01:34:09 NZST" name="setup" finished-at="2024-08-22T01:34:09 NZST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getBooksTest()[pri:0, instance:com.demoqa.apitests.BookStoreApiTests@7cb502c]" started-at="2024-08-22T01:34:09 NZST" name="getBooksTest" finished-at="2024-08-22T01:34:11 NZST" duration-ms="1380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBooksTest -->
+      </class> <!-- com.demoqa.apitests.BookStoreApiTests -->
+      <class name="com.demoqa.apitests.UserRegistrationApiTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoqa.apitests.UserRegistrationApiTests@398dada8]" started-at="2024-08-22T01:34:05 NZST" name="setup" finished-at="2024-08-22T01:34:05 NZST" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerUserFailureTest()[pri:0, instance:com.demoqa.apitests.UserRegistrationApiTests@398dada8]" started-at="2024-08-22T01:34:05 NZST" name="registerUserFailureTest" finished-at="2024-08-22T01:34:08 NZST" duration-ms="2581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserFailureTest -->
+        <test-method signature="registerUserSuccessTest()[pri:0, instance:com.demoqa.apitests.UserRegistrationApiTests@398dada8]" started-at="2024-08-22T01:34:08 NZST" name="registerUserSuccessTest" finished-at="2024-08-22T01:34:09 NZST" duration-ms="1573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserSuccessTest -->
+      </class> <!-- com.demoqa.apitests.UserRegistrationApiTests -->
+    </test> <!-- API Tests -->
+  </suite> <!-- BookStoreTestSuite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package com.demoqa.tests;
+package com.demoqa.uitests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

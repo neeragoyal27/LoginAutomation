@@ -1,7 +1,13 @@
-package com.demoqa.tests;
+package com.demoqa.uitests;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,14 +32,15 @@ public class LoginTests {
 
     @Test
     public void validLoginTest() throws InterruptedException {
-        loginPage.enterUsername("Neera");
-        loginPage.enterPassword("Mydreams123$");
+        loginPage.enterUsername("james");
+        loginPage.enterPassword("Testing123!");
         
-		Thread.sleep(2000);
-        loginPage.clickLoginButton();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));
+        loginButton.click();
         
-		Thread.sleep(2000);
-        Assert.assertTrue(profilePage.getProfileName().contains("Neera"));
+		Thread.sleep(4000);
+        Assert.assertTrue(profilePage.getProfileName().contains("james"));
     }
 
     @Test
@@ -41,10 +48,11 @@ public class LoginTests {
         loginPage.enterUsername("invalidUser");
         loginPage.enterPassword("invalidPassword");
         
-		Thread.sleep(2000);
-        loginPage.clickLoginButton();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));
+        loginButton.click();
         
-		Thread.sleep(2000);
+		Thread.sleep(4000);
         Assert.assertTrue(loginPage.getErrorMessageField().isDisplayed());
     }
 
