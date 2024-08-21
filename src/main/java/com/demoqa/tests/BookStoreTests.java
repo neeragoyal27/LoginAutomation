@@ -23,10 +23,10 @@ public class BookStoreTests {
 
     @Test
     public void searchBookTest() throws InterruptedException {
-        bookStorePage.searchForBook("Speaking JavaScript");
+        bookStorePage.searchForBook("Programming JavaScript Applications");
         
         Thread.sleep(2000);
-        Assert.assertTrue(bookStorePage.getFirstBookTitle("Speaking JavaScript").isDisplayed());
+        Assert.assertTrue(bookStorePage.getFirstBookTitle("Programming JavaScript Applications").isDisplayed());
     }
 
     @AfterMethod

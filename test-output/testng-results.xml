@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T00:17:55 NZST" name="Default suite" finished-at="2024-08-22T00:18:22 NZST" duration-ms="26700">
+  <suite started-at="2024-08-22T00:23:46 NZST" name="Default suite" finished-at="2024-08-22T00:24:14 NZST" duration-ms="27854">
     <groups>
     </groups>
-    <test started-at="2024-08-22T00:17:55 NZST" name="Default test" finished-at="2024-08-22T00:18:22 NZST" duration-ms="26700">
+    <test started-at="2024-08-22T00:23:46 NZST" name="Default test" finished-at="2024-08-22T00:24:14 NZST" duration-ms="27854">
       <class name="com.demoqa.tests.BookStoreTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:17:55 NZST" name="setUp" finished-at="2024-08-22T00:18:19 NZST" duration-ms="24135" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:23:46 NZST" name="setUp" finished-at="2024-08-22T00:24:11 NZST" duration-ms="25130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchBookTest()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:18:19 NZST" name="searchBookTest" finished-at="2024-08-22T00:18:22 NZST" duration-ms="2320" status="PASS">
+        <test-method signature="searchBookTest()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:24:11 NZST" name="searchBookTest" finished-at="2024-08-22T00:24:13 NZST" duration-ms="2478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBookTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:18:22 NZST" name="tearDown" finished-at="2024-08-22T00:18:22 NZST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.tests.BookStoreTests@456d6c1e]" started-at="2024-08-22T00:24:13 NZST" name="tearDown" finished-at="2024-08-22T00:24:14 NZST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
